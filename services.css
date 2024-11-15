@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+.home {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Services Container */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.service-card, .employee-details {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.employee-details {
+    flex: 1 1 100%;
+}
+
+.employee-details h3 {
+    margin-top: 0;
+}

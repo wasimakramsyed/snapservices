@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Collaboration Portal</title>
+    <link rel="stylesheet" href="collaborate.css">
+    <!-- Link to External JavaScript File -->
+    <script src="collaborate.js" defer></script>
+    <style>
+        input, select {
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%;
+        }
+        #otpField {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Image Section -->
+        <div class="image-container"></div>
+
+        <!-- Form Section -->
+        <div class="form-container">
+            <header>
+                <h1>Employee Collaboration Portal</h1>
+            </header>
+
+            <!-- Form to Submit Details -->
+            <!-- On first submit, it will go to generate.php to send OTP -->
+            <form  method="POST" id="registrationForm" onsubmit="handlesubmit(event)">
+                <!-- Name and Email Fields -->
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required /> <br><br>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email id" required /><br/><br/>
+
+                <!-- Phone Number Field -->
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required oninput="showOtpField()" maxlength="10" pattern="[0-9]{10}" /> <br><br>
+
+                <!-- Service Selection -->
+                <label for="service">What service are you going to provide?</label><br><br>
+                <select name="service" id="service" required>
+                    <option value="plumber">Plumber</option>
+                    <option value="electrician">Electrician</option>
+                    <option value="maid">Maid</option>
+                    <option value="nurse">Nurse</option>
+                    <option value="care_taker">Care Taker</option>
+                    <option value="ac_repair">AC Repair</option>
+                    <option value="carpenter">Carpenter</option>
+                    <option value="cook">Cook</option>
+                    <option value="painter">Painter</option>
+                    <option value="construction_worker">Construction Worker</option>
+                    <option value="daily_wage_worker">Daily Wage Worker</option>
+                    <option value="driver">Driver</option>
+                    <option value="packers_and_movers">Packers and Movers</option>
+                    <option value="room_rents">Room Rents</option>
+                    <option value="internet_connection">Internet Connection</option>
+                    <option value="home_builder">Home Builder</option>
+                    <option value="teacher">Mobile Services</option>
+                    <option value="make_up_artist">Make Up Artist</option>
+                </select> <br><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit">
+            </form>
+
+            <!-- OTP Field (Initially Hidden, shown after OTP is sent) -->
+            <div id="otpField">
+                <form action="collaborate.php" method="POST">
+                    <input type="number" name="otp" placeholder="Enter your OTP" required /> <br><br>
+                    <input type="submit" value="Verify OTP">
+                </form>
+            </div>
+
+            <div class="note">
+                <strong>NOTE:</strong>
+                <p>If you have problems with collaborating, please contact our team using the below link:</p>
+                <br><a href="contact.html" class="contact-link">Contact our team</a>
+            </div>
+        </div>
+    </div>
+
+
+        
+</body>
+</html>
