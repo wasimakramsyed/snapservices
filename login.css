@@ -142,6 +142,6 @@ body {
 /* Responsive */
 @media (max-width: 600px) {
     .login-box {
-        padding: 20px;
+        width: 320px;
     }
 }

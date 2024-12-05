@@ -153,3 +153,8 @@ body {
     color: #ebeb94;
 }
 
+@media (max-width: 768px) {
+    .signup-box{
+        width: 360px;
+    }
+}
