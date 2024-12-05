@@ -706,6 +706,7 @@ footer .copyright p {
         body {
             font-size: 14px;
             width: 95%;
+            width: 420px;
         }
         .container, .content, .footer {
             width: 100%;
