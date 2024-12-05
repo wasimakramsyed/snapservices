@@ -228,7 +228,10 @@ header nav a:hover {
     header nav a{
         font-size: 10px;
     }
-
+    
+    .hero-content{
+        padding-left: 72px;
+    }
     .hero-content h1 {
         font-size: 36px;
         width: 400px;
@@ -724,7 +727,7 @@ footer .copyright p {
         body {
             font-size: 14px;
             width: 95%;
-            width: 420px;
+            width: 440px;
         }
         .container, .content, .footer {
             width: 100%;
