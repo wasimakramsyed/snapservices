@@ -168,7 +168,7 @@ header nav a:hover {
 
 .hero-content button {
     align-self: flex-start;  /* Align button to the left */
-    padding: 16px 32px;
+    padding: 14px 32px;
     font-size: 18px;
     margin-left: 55%;
     margin-top: -9%;
@@ -211,6 +211,23 @@ header nav a:hover {
     .carousel-slide img {
         height: 80vh; /* Adjust image height for smaller screens */
     }
+    
+    header{
+        padding-left: 10px;
+    }
+    header .logo{
+        font-size: 20px;
+        margin-right: 9px;
+    }
+
+    header nav{
+        display: flex;
+        gap: 5px;
+    }
+
+    header nav a{
+        font-size: 10px;
+    }
 
     .hero-content h1 {
         font-size: 36px;
@@ -225,6 +242,7 @@ header nav a:hover {
         width: 200px;
         border-left-width: 50px;
         padding-left: 160px;
+
     }
 
     .hero-content .search-bar input,
