@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapService - Find Trusted Professionals</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">SnapService</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <!-- <a href="booking.html">your Bookings</a> -->
+            <a href="collaborate.html">collaborate</a>
+            <a href="signup.html">signup</a>
+            <a href="login.html">Log in</a>
+        </nav>
+    </header>
+         
+              <!-- Title and Search Bar Over Image -->
+              <div class="hero-content">
+                <h1>Find Trusted Professionals for Any Job in Seconds!</h1>
+                <section class="search-bar">
+                    <input type="text" list="servicesList" name="Services"  id="services" placeholder="what service you are looking for?">
+                    <datalist id="servicesList">
+                    <option>Plumber</option>
+                    <option>Electrician</option>
+                    <option>Maid</option>
+                    <option >Nurse</option>
+                    <option>care taker</option>
+                    <option>Ac repair</option>
+                    <option>Carpenter</option>
+                    <option>Cook</option>
+                    <option>Painter</option>
+                    <option>Construction worker</option>
+                    <option>Daily wage worker</option>
+                    <option>Driver</option>
+                    <option>Packers-and-movers</option>
+                    <option>Room Renters</option>
+                    <option>Internet Connection</option>
+                    <option>Home builders</option>
+                    <option>Financial services</option>
+                    <option>Mobile sevices</option>
+                </datalist> 
+                <button onclick="searchServices()" id="services">Search</button>
+               <section id="results"></section>
+                </section>
+            </div>
+
+    
+
+    <!-- Hero Section with Image -->
+    <section class="hero">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="cook.jpg" alt="Cook">
+                <img src="nurse.jpg" alt="Nurse">
+                <img src="driver.jpg" alt="Driver">
+                <img src="maid.jpg" alt="Maid">
+                <img src="workee.jpg" alt="Worker">
+                <img src="painter.jpg" alt="Painter">
+                <img src="electric.jpg" alt="electric">
+            </div>
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        </div>
+        
+
+    </section>
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            At SnapService, we connect you with trusted professionals for all your needs. Whether it's home services, medical help, or personal assistance, we ensure fast, reliable, and affordable solutions. Your satisfaction is our priority!
+        </marquee>
+    </div>
+    <section class="how-it-works">
+        <div class="how-it-works-content">
+            <div class="step">
+                <img src="snap.webp" alt="Book Instantly" class="step-icon">
+                <p class="SnapService-2025">SnapService 2025</p>
+            </div>
+            <div class="how-it-works-details">
+                <h2 class="company">Company</h2>
+                <h2 class="details">Details</h2>
+                <h2 class="address">Address</h2>
+            </div>
+        </div>
+        
+
+        <div class="steps">
+            <!-- Add individual steps or sections here, for example: -->
+            <div class="step-item">
+                <a href="about.html">AboutUs</a>
+                <p>Who we are....?</p>
+            </div>
+            <div class="step-item"> 
+                <a href="contact.html">Contact Us</a>
+                <p>How to consult us...?</p>
+            </div>
+            <div class="step-item">
+                <a href="address.html">Address  </a>
+                <p>Our address...?</p>
+            </div>
+        </div>
+    </section>
+    
+
+   <!-- Footer -->
+   <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="privacypolicy.html">Privacy Policy</a>
+                <a href="Termsofservice.html">Terms of Service</a>
+            </div>
+            <div class="social-media">
+                <p>Follow us:</p>
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Twitter</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 SnapService. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide img');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            const slideWidth = slides[0].clientWidth;
+            const newTransformValue = -index * slideWidth;
+            document.querySelector('.carousel-slide').style.transform = `translateX(${newTransformValue}px)`;
+        }
+
+        function moveSlide(step) {
+            slideIndex = (slideIndex + step + totalSlides) % totalSlides;
+            showSlide(slideIndex);
+        }
+
+        // Auto slide every 5 seconds
+        setInterval(() => {
+            moveSlide(1);
+        }, 2000);
+
+        // Initial display
+        showSlide(slideIndex);
+    </script>
+                   <script src="index.js"></script>
+
+
+</body>
+</html>

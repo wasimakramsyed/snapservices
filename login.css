@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+    background-image: url("loginpic2.jpg");
+    /* opacity: 20; */
+    /* filter: brightness(200%); */
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    animation: backgroundZoom 10s infinite alternate;  
+    margin: 0;
+    background-position: fixed;
+    /* background: rgba(0,0,0,0.1); */
+}
+
+/* Background Animation */
+@keyframes backgroundZoom {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 110%;
+    }
+}
+
+/* Animation for login box */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* login container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(119, 106, 87, 0.8); /* Soft background overlay */
+}
+
+/* login box */
+.login-box {
+    background-color: #bad1e9;
+    width: 400px;
+    padding: 0px;
+    border-radius: 1.5em;
+    border-top-left-radius: 0;
+    border-bottom-right-radius:0 ;
+    box-shadow: 0px 11px 35px 2px rgb(71, 120, 225);
+    text-align: center;
+    animation: fadeInScale 0.5s ease-out;
+    text-align: center;
+}
+
+/* Heading */
+.login-box h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: black
+}
+
+/* Input Fields */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    color: rgb(38, 50, 56);
+    font-family: 'Ubuntu', sans-serif;
+    width: 70%;
+    padding: 12px;
+    margin: 20px 0 0px  0;
+    text-align: center;
+    border: 1px solid rgb(143, 57, 143);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Login Botton */
+.login-box button {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    background: rgba(136, 126, 126, 0.04);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px; 
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(17, 12, 24);;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+/* Forgot Password Button */
+.login-box1 button {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0; 
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Button Hover State */
+.login-box button:hover {
+    color: white;
+    background-color: rgb(7, 132, 221);
+}
+.login-box1 button:hover{
+    color: rgba(238, 248, 127, 0.795);
+    background: transparent;
+}
+
+/* Additional Text */
+.login-box p {
+    margin-top: 20px;
+}
+
+/* Links */
+.login-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Link Hover State */
+.login-box a:hover {
+    text-decoration: none;
+    color: #ebeb94;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .login-box {
+        padding: 20px;
+    }
+}

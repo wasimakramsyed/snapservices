@@ -1,0 +1,155 @@
+
+/* Global Styles */
+body {
+    background-image: url("sanp.jpeg");
+    /* opacity: 20; */
+    /* filter: brightness(200%); */
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    animation: backgroundZoom 10s infinite alternate;  
+    margin: 0;
+    background-position: fixed;
+    /* background: rgba(0,0,0,0.1); */
+}
+
+/* Background Animation */
+@keyframes backgroundZoom {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 110%;
+    }
+}
+
+/* Main Container */
+/* .main {
+    background-color: #886a6a;
+    width: 400px;
+    height: 400px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+} */
+
+/* Animation for Sign-Up Box */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Sign-Up Container */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(119, 106, 87, 0.8); /* Soft background overlay */
+}
+
+/* Sign-Up Box */
+.signup-box {
+    background-color: #bab8da;
+    width: 400px;
+    padding: 0px;
+    border-radius: 1.5em;
+    border-top-left-radius: 0;
+    border-bottom-right-radius:0 ;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    text-align: center;
+    animation: fadeInScale 0.5s ease-out;
+}
+
+/* Heading */
+.signup-box h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #131111;
+}
+
+/* Input Fields */
+.signup-box input[type="text"],
+.signup-box input[type="email"],
+.signup-box input[type="password"] {
+    width: 70%;
+    padding: 12px;
+    margin: 20px 0 0px  0;
+    text-align: center;
+    border: 1px solid #285675;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Placeholder Styling */
+.signup-box input[type="text"]::placeholder,
+.signup-box input[type="email"]::placeholder,
+.signup-box input[type="password"]::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    color: #201d1d;
+}
+
+/* Focus State for Input Fields */
+.signup-box input[type="text"]:focus,
+.signup-box input[type="email"]:focus,
+.signup-box input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(31, 32, 32, 0.5);
+}
+
+/* Submit Button */
+.signup-box button {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px; 
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    /* border: solid rgb(202, 150, 150)    ; */
+    border-radius: 20px;
+    border: 2px solid rgb(221, 182, 182);
+    /* outline: ; */
+    /* box-sizing: border-box; */
+
+    /* border: 2px solid rgba(0, 0, 0, 0.02); */
+    margin-bottom: 27px;
+    margin-top: 46px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+/* Button Hover State with Animation */
+.signup-box button:hover {
+    background-color: #ebeb94;
+    transform: scale(1.05);
+    border: 2px solid gold;
+    color: blue;
+    opacity: 8;
+}
+
+/* Additional Text */
+.signup-box p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #201f1f;
+}
+
+/* Links */
+.signup-box a {
+    color: #1b1c1d;
+    text-decoration: none;
+}
+
+/* Link Hover State */
+.signup-box a:hover {
+    text-decoration: none;
+    color: #ebeb94;
+}
+

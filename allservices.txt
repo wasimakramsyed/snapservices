@@ -1,0 +1,13 @@
+ driver 
+ plumber
+ electician
+ maid
+ nurse
+ care taker
+ ac repair guy
+ carpenter
+ cook
+ painter
+ construction worker
+ daily wage worker
+ 
