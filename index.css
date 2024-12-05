@@ -214,12 +214,17 @@ header nav a:hover {
 
     .hero-content h1 {
         font-size: 36px;
+        width: 400px;
+        padding-left: 0px;
     }
 
     .hero-content .search-bar {
         flex-direction: column;
         margin-left: 10%;
         margin-top: 0%;
+        width: 200px;
+        border-left-width: 50px;
+        padding-left: 160px;
     }
 
     .hero-content .search-bar input,
